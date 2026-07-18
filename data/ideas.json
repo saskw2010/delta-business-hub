@@ -1,0 +1,20 @@
+[
+  {
+    "id":"DBH-0001","title":"AI operations copilot for small clinics","summary":"A privacy-aware assistant that helps independent clinics organize appointments, follow-ups, stock alerts, routine reports, and administrative workflows without replacing clinical judgment.","category":"AI & Automation","stage":"Validation","lookingFor":"Clinic pilot partners and healthcare operations specialists","skills":["Healthcare operations","Workflow automation","Privacy","Product design"],"location":"GCC and North Africa","owner":"DBH Showcase","createdAt":"2026-07-18T09:00:00Z","openToPartners":true,"featured":true
+  },
+  {
+    "id":"DBH-0002","title":"Regional supplier discovery network","summary":"A verified directory and request workflow that helps growing businesses identify suitable local suppliers, compare capabilities, and create transparent introductions across nearby markets.","category":"Commerce","stage":"Concept","lookingFor":"Procurement experts, supplier networks, and marketplace builders","skills":["Procurement","B2B marketplaces","Verification","Partnerships"],"location":"Middle East","owner":"DBH Showcase","createdAt":"2026-07-17T12:00:00Z","openToPartners":true,"featured":true
+  },
+  {
+    "id":"DBH-0003","title":"Skills-to-project learning studio","summary":"A practical education platform where learners build portfolio projects for real community initiatives while mentors assess applied skills, communication, reliability, and improvement over time.","category":"Education","stage":"MVP","lookingFor":"Education partners, mentors, and early learner cohorts","skills":["Instructional design","Mentoring","Assessment","Community operations"],"location":"Remote","owner":"DBH Showcase","createdAt":"2026-07-16T08:30:00Z","openToPartners":true,"featured":true
+  },
+  {
+    "id":"DBH-0004","title":"Shared logistics capacity exchange","summary":"A coordination layer for small distributors to publish unused delivery capacity and match compatible routes, helping reduce empty trips while keeping commercial data appropriately separated.","category":"Logistics","stage":"Concept","lookingFor":"Fleet operators, logistics analysts, and route optimization engineers","skills":["Logistics","Optimization","B2B sales","Data governance"],"location":"GCC","owner":"DBH Showcase","createdAt":"2026-07-14T15:20:00Z","openToPartners":true,"featured":false
+  },
+  {
+    "id":"DBH-0005","title":"Building maintenance transparency portal","summary":"A property operations portal that converts service requests, inspection findings, vendor quotations, approvals, and completion evidence into a clear timeline for owners and tenants.","category":"Real Estate","stage":"Validation","lookingFor":"Property managers and maintenance service providers","skills":["Property management","Field service","UX research","Integrations"],"location":"Kuwait and UAE","owner":"DBH Showcase","createdAt":"2026-07-12T10:45:00Z","openToPartners":true,"featured":false
+  },
+  {
+    "id":"DBH-0006","title":"Reusable packaging coordination service","summary":"A lightweight system for restaurants, offices, and delivery partners to manage deposits, returns, cleaning cycles, and impact reporting for reusable food packaging.","category":"Sustainability","stage":"Validation","lookingFor":"Restaurant groups, delivery partners, and sustainability advisors","skills":["Circular economy","Operations","Partnerships","Mobile product"],"location":"Urban pilot market","owner":"DBH Showcase","createdAt":"2026-07-10T13:10:00Z","openToPartners":true,"featured":false
+  }
+]

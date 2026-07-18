@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore business ideas and collaboration opportunities in Delta Business Hub.">
+  <meta name="theme-color" content="#0b6b59">
+  <title>Ideas | Delta Business Hub</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/app.js" defer></script><script src="assets/js/ideas.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" data-header><div class="container nav-shell"><a class="brand" href="index.html"><img src="assets/img/logo.svg" alt="" width="42" height="42"><span><strong>Delta</strong><small>Business Hub</small></span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle><span class="sr-only">Open navigation</span><span></span><span></span><span></span></button><nav id="primary-nav" class="primary-nav" data-nav><a href="index.html" data-nav-link>Home</a><a href="ideas.html" data-nav-link>Ideas</a><a href="community.html" data-nav-link>Community</a><a href="about.html" data-nav-link>About</a><a class="button button-small" href="submit.html">Share an idea</a></nav><button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch appearance">◐</button></div></header>
+<main id="main">
+  <section class="page-hero"><div class="container narrow"><span class="eyebrow">Opportunity directory</span><h1>Explore ideas worth building</h1><p>Discover demonstration concepts, identify where you can contribute, and use your browser-local submissions to test the future community workflow.</p></div></section>
+  <section class="section directory-section"><div class="container">
+    <div class="notice notice-info"><strong>Demonstration mode:</strong> Showcase records come from the repository. Ideas you submit are visible only in this browser until the Google backend is connected.</div>
+    <div class="filter-bar" aria-label="Filter ideas">
+      <label class="search-field"><span class="sr-only">Search ideas</span><span aria-hidden="true">⌕</span><input type="search" placeholder="Search title, summary, skills…" data-idea-search></label>
+      <label><span class="sr-only">Category</span><select data-category-filter><option value="all">All categories</option></select></label>
+      <label><span class="sr-only">Stage</span><select data-stage-filter><option value="all">All stages</option><option value="Concept">Concept</option><option value="Validation">Validation</option><option value="MVP">MVP</option><option value="Growth">Growth</option></select></label>
+      <label><span class="sr-only">Sort</span><select data-sort-filter><option value="newest">Newest</option><option value="title">Title A–Z</option><option value="stage">Stage</option></select></label>
+    </div>
+    <div class="directory-meta"><p><strong data-results-count>0</strong> ideas found</p><button class="text-button" type="button" data-clear-local>Clear my local ideas</button></div>
+    <div class="ideas-grid directory-grid" data-ideas-grid aria-live="polite"><div class="loading-card">Loading ideas…</div></div>
+    <div class="empty-state" data-empty-state hidden><span>◇</span><h2>No ideas match these filters</h2><p>Try a broader search or clear one of the filters.</p><button class="button button-secondary" type="button" data-reset-filters>Reset filters</button></div>
+  </div></section>
+</main>
+<dialog class="idea-dialog" data-idea-dialog><button class="dialog-close" type="button" data-dialog-close aria-label="Close">×</button><div data-dialog-content></div></dialog>
+<footer class="site-footer"><div class="container footer-grid"><div><a class="brand brand-footer" href="index.html"><img src="assets/img/logo.svg" alt="" width="40" height="40"><span><strong>Delta</strong><small>Business Hub</small></span></a><p>Share an idea. Find partners. Build together.</p></div><div><strong>Explore</strong><a href="ideas.html">Ideas</a><a href="submit.html">Submit an idea</a><a href="community.html">Community</a></div><div><strong>Project</strong><a href="about.html">About</a><a href="https://github.com/Saskw2010/delta-business-hub">GitHub</a><a href="SECURITY.md">Security</a></div><div><strong>Principles</strong><span>Open</span><span>Neutral</span><span>Collaborative</span></div></div><div class="container footer-bottom"><span>© <span data-current-year></span> Delta Business Hub.</span><span>Powered by open collaboration.</span></div></footer>
+</body></html>

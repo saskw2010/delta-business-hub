@@ -1,0 +1,42 @@
+name: Idea or opportunity
+about: Propose an idea for discussion in the public repository
+labels: [idea]
+body:
+  - type: markdown
+    attributes:
+      value: "Use this template only for non-confidential ideas suitable for a public GitHub issue."
+  - type: input
+    id: title
+    attributes:
+      label: Working title
+      placeholder: A concise opportunity title
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: Who experiences it, and why does it matter?
+    validations:
+      required: true
+  - type: textarea
+    id: direction
+    attributes:
+      label: Proposed direction
+      description: Describe the initial solution or business direction.
+    validations:
+      required: true
+  - type: textarea
+    id: support
+    attributes:
+      label: Support needed
+      description: Skills, partners, pilots, research, or other capabilities.
+    validations:
+      required: true
+  - type: checkboxes
+    id: public
+    attributes:
+      label: Public information confirmation
+      options:
+        - label: This issue contains no confidential, sensitive, or personal information.
+          required: true

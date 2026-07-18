@@ -1,0 +1,22 @@
+name: Quality checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate JSON files
+        run: |
+          python -m json.tool data/ideas.json > /dev/null
+          python -m json.tool data/categories.json > /dev/null
+          python -m json.tool manifest.webmanifest > /dev/null
+      - name: Verify required files and internal links
+        run: python scripts/quality_check.py

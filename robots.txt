@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saskw2010.github.io/delta-business-hub/sitemap.xml

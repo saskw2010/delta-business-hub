@@ -1,0 +1,10 @@
+{
+  "name":"Delta Business Hub",
+  "short_name":"DBH",
+  "description":"Share an idea. Find partners. Build together.",
+  "start_url":"./index.html",
+  "display":"standalone",
+  "background_color":"#fbfdfc",
+  "theme_color":"#0b6b59",
+  "icons":[{"src":"assets/img/favicon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
