@@ -3,131 +3,64 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Delta Business Hub connects ideas, founders, professionals, and partners to build businesses together.">
-  <meta name="theme-color" content="#0b6b59">
+  <meta name="description" content="Enter Delta Business Hub in English or Arabic and connect ideas, people, and opportunities.">
+  <meta name="theme-color" content="#075447">
   <meta property="og:title" content="Delta Business Hub">
-  <meta property="og:description" content="Share an idea. Find partners. Build together.">
+  <meta property="og:description" content="Connect. Share. Build. Grow.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/img/social-preview.svg">
-  <title>Delta Business Hub | Where Ideas Become Businesses</title>
+  <title>Enter Delta Business Hub</title>
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="assets/css/styles.css">
-  <script src="assets/js/app.js" defer></script>
-  <script src="assets/js/home.js" defer></script>
+  <link rel="stylesheet" href="assets/css/portal.css">
+  <script src="assets/js/portal.js" defer></script>
 </head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header" data-header>
-    <div class="container nav-shell">
-      <a class="brand" href="index.html" aria-label="Delta Business Hub home">
-        <img src="assets/img/logo.svg" alt="" width="42" height="42">
-        <span><strong>Delta</strong><small>Business Hub</small></span>
+<body class="entry-page">
+  <div class="entry-shell">
+    <header class="entry-header">
+      <a class="entry-brand" href="index.html" aria-label="Delta Business Hub entry page">
+        <img src="assets/img/logo.svg" alt="" width="50" height="50">
+        <span><strong>Delta Business Hub</strong><small>Global collaboration community</small></span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle><span class="sr-only">Open navigation</span><span></span><span></span><span></span></button>
-      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation" data-nav>
-        <a href="index.html" data-nav-link>Home</a>
-        <a href="ideas.html" data-nav-link>Ideas</a>
-        <a href="community.html" data-nav-link>Community</a>
-        <a href="about.html" data-nav-link>About</a>
-        <a class="button button-small" href="submit.html">Share an idea</a>
-      </nav>
-      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch appearance"><span aria-hidden="true">◐</span></button>
-    </div>
-  </header>
+      <div class="entry-status"><i aria-hidden="true"></i><span>Community portal online</span></div>
+    </header>
 
-  <main id="main">
-    <section class="hero section">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <span class="eyebrow">Open business collaboration community</span>
-          <h1>Turn promising ideas into <span class="text-gradient">real businesses.</span></h1>
-          <p class="hero-lead">Meet founders, specialists, partners, and supporters who can help move an idea from conversation to execution.</p>
-          <div class="hero-actions">
-            <a class="button" href="ideas.html">Explore ideas</a>
-            <a class="button button-secondary" href="submit.html">Share your idea</a>
-          </div>
-          <div class="trust-row" aria-label="Community principles">
-            <span>Company-neutral</span><span>Open collaboration</span><span>Execution-focused</span>
-          </div>
+    <main class="entry-main">
+      <section class="entry-copy" aria-labelledby="entry-title">
+        <span class="entry-kicker">One hub · Two languages · Shared ambition</span>
+        <h1 id="entry-title">Enter a world where <span>ideas connect.</span></h1>
+        <p>Choose your language and enter Delta Business Hub — a public community for founders, professionals, partners, and builders who want to turn promising ideas into real businesses.</p>
+        <div class="language-choice" aria-label="Choose your language">
+          <a class="language-card" href="en/index.html" data-enter="en">
+            <span><strong>Enter in English</strong><small>English experience</small></span><b aria-hidden="true">→</b>
+          </a>
+          <a class="language-card" href="ar/index.html" data-enter="ar" dir="rtl" lang="ar">
+            <span><strong>الدخول بالعربية</strong><small>النسخة العربية</small></span><b aria-hidden="true">←</b>
+          </a>
         </div>
-        <div class="hero-visual reveal" aria-label="Idea collaboration workflow">
-          <div class="orbit-card orbit-main"><span class="icon-badge">Δ</span><strong>One hub</strong><small>Ideas, people, projects</small></div>
-          <div class="orbit-card orbit-one"><span>01</span><strong>Share</strong></div>
-          <div class="orbit-card orbit-two"><span>02</span><strong>Connect</strong></div>
-          <div class="orbit-card orbit-three"><span>03</span><strong>Build</strong></div>
-          <div class="orbit-ring"></div>
-        </div>
-      </div>
-    </section>
+        <p class="entry-note">The selected language is remembered on this device. You can switch languages at any time from the top of every localized page.</p>
+      </section>
 
-    <section class="stats-strip" aria-label="Platform demonstration statistics">
-      <div class="container stats-grid">
-        <div><strong data-stat="ideas">—</strong><span>showcase ideas</span></div>
-        <div><strong data-stat="categories">—</strong><span>active categories</span></div>
-        <div><strong data-stat="open">—</strong><span>open to partners</span></div>
-        <div><strong>1</strong><span>shared mission</span></div>
-      </div>
-    </section>
+      <section class="entry-visual" aria-label="Animated global collaboration network">
+        <div class="globe-halo" aria-hidden="true"></div>
+        <div class="orbit-track" aria-hidden="true"></div>
+        <div class="orbit-track track-two" aria-hidden="true"></div>
+        <div class="orbit-track track-three" aria-hidden="true"></div>
+        <div class="wire-globe" aria-hidden="true"></div>
+        <div class="globe-base" aria-hidden="true"></div>
+      </section>
+    </main>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div><span class="eyebrow">How it works</span><h2>A clear path from idea to action</h2></div>
-          <p>DBH creates a transparent collaboration workflow that can grow with the community.</p>
-        </div>
-        <div class="steps-grid">
-          <article class="step-card reveal"><span>01</span><h3>Share an idea</h3><p>Describe the problem, opportunity, proposed solution, and support you need.</p></article>
-          <article class="step-card reveal"><span>02</span><h3>Find the right people</h3><p>Connect with collaborators whose skills, assets, or market access complement yours.</p></article>
-          <article class="step-card reveal"><span>03</span><h3>Shape the opportunity</h3><p>Validate assumptions, define responsibilities, and agree on the next measurable milestone.</p></article>
-          <article class="step-card reveal"><span>04</span><h3>Build together</h3><p>Move into a project workspace with shared documentation, progress, and accountability.</p></article>
-        </div>
-      </div>
-    </section>
+    <footer class="entry-footer">
+      <span>Connect. Share. Build. Grow.</span>
+      <span>© <span id="entry-year"></span> Delta Business Hub</span>
+    </footer>
+  </div>
 
-    <section class="section section-soft">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div><span class="eyebrow">Featured opportunities</span><h2>Ideas looking for momentum</h2></div>
-          <a class="text-link" href="ideas.html">View all ideas <span>→</span></a>
-        </div>
-        <div class="ideas-grid" data-featured-ideas aria-live="polite"><div class="loading-card">Loading ideas…</div></div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container split-panel reveal">
-        <div>
-          <span class="eyebrow">Built for collaboration</span>
-          <h2>Different roles. One shared outcome.</h2>
-          <p>Strong businesses rarely start with one person doing everything. Delta Business Hub helps each participant contribute where they create the most value.</p>
-          <a class="button button-secondary" href="community.html">Meet the community model</a>
-        </div>
-        <div class="role-list">
-          <div><span>F</span><p><strong>Founders</strong><small>Bring vision and ownership.</small></p></div>
-          <div><span>S</span><p><strong>Specialists</strong><small>Bring practical expertise.</small></p></div>
-          <div><span>P</span><p><strong>Partners</strong><small>Bring channels and resources.</small></p></div>
-          <div><span>M</span><p><strong>Mentors</strong><small>Bring perspective and guidance.</small></p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section cta-section">
-      <div class="container cta-card reveal">
-        <div><span class="eyebrow eyebrow-light">Start with one useful conversation</span><h2>Your next partner may already be looking for your idea.</h2></div>
-        <a class="button button-light" href="submit.html">Share an idea</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div><a class="brand brand-footer" href="index.html"><img src="assets/img/logo.svg" alt="" width="40" height="40"><span><strong>Delta</strong><small>Business Hub</small></span></a><p>Share an idea. Find partners. Build together.</p></div>
-      <div><strong>Explore</strong><a href="ideas.html">Ideas</a><a href="submit.html">Submit an idea</a><a href="community.html">Community</a></div>
-      <div><strong>Project</strong><a href="about.html">About</a><a href="https://github.com/Saskw2010/delta-business-hub">GitHub</a><a href="SECURITY.md">Security</a></div>
-      <div><strong>Principles</strong><span>Open</span><span>Neutral</span><span>Collaborative</span></div>
-    </div>
-    <div class="container footer-bottom"><span>© <span data-current-year></span> Delta Business Hub.</span><span>Powered by open collaboration.</span></div>
-  </footer>
+  <div class="entry-overlay" data-entry-overlay aria-hidden="true" role="status" aria-live="polite">
+    <div class="entry-overlay-content"><div class="mini-globe" aria-hidden="true"></div><p data-entry-status>Entering the hub…</p></div>
+  </div>
+  <script>document.getElementById('entry-year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

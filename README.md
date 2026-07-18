@@ -16,13 +16,15 @@ The site is deployed through GitHub Pages from the `main` branch using GitHub Ac
 
 The GitHub Pages foundation includes:
 
-- Responsive, accessible landing page
-- Searchable and filterable ideas directory
-- Browser-local idea submission demo
+- Animated globe entry page with English and Arabic language selection
+- Complete English and Arabic versions of the core public pages
+- Centered language switch on every localized page
+- Responsive RTL support for the Arabic experience
+- Searchable and filterable ideas directories
+- Browser-local idea submission with localized validation
 - Community and project information pages
 - Dark/light appearance controls
-- Progressive Web App metadata
-- Automated Pages deployment and quality checks
+- Automated Pages deployment and recursive link validation
 - Documentation for the future Google Sheets/Drive/Apps Script integration
 
 The local submission demo stores data only in the visitor's browser. Public submissions will be activated in the next phase through Google Apps Script and the Delta Business Hub Google Sheet.
@@ -34,6 +36,18 @@ The local submission demo stores data only in the visitor's browser. Public subm
 ├── .github/
 │   ├── ISSUE_TEMPLATE/
 │   └── workflows/
+├── ar/
+│   ├── index.html
+│   ├── ideas.html
+│   ├── submit.html
+│   ├── community.html
+│   └── about.html
+├── en/
+│   ├── index.html
+│   ├── ideas.html
+│   ├── submit.html
+│   ├── community.html
+│   └── about.html
 ├── assets/
 │   ├── css/
 │   ├── img/
@@ -61,8 +75,10 @@ Then open `http://localhost:8000`.
 ## Architecture
 
 ```text
-GitHub Pages UI
+Bilingual GitHub Pages UI
       │
+      ├── English experience /en
+      ├── Arabic experience /ar
       ├── Static JSON demonstration data
       ├── Local browser drafts
       │
