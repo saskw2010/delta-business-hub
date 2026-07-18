@@ -1,5 +1,6 @@
 name: Idea or opportunity
-about: Propose an idea for discussion in the public repository
+description: Propose an idea for discussion in the public repository
+title: "[Idea]: "
 labels: [idea]
 body:
   - type: markdown
