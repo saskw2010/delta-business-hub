@@ -12,6 +12,14 @@ The site is deployed through GitHub Pages from the `main` branch using GitHub Ac
 
 `https://saskw2010.github.io/delta-business-hub/`
 
+## Execution board
+
+The operational source of truth for recommendations, user ideas, pending work, suggestions, decisions, and completed work is:
+
+[`EXECUTION-BOARD.md`](EXECUTION-BOARD.md)
+
+Items have permanent IDs. In chat, commands such as `نفذ DBH-PEN-001` approve immediate execution without another planning response.
+
 ## Current release
 
 The GitHub Pages foundation includes:
@@ -54,6 +62,7 @@ The local submission demo stores data only in the visitor's browser. Public subm
 │   └── js/
 ├── data/
 ├── docs/
+├── EXECUTION-BOARD.md
 ├── index.html
 ├── ideas.html
 ├── submit.html
