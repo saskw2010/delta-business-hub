@@ -1,0 +1,52 @@
+name: Execution board item
+description: Add or approve a recommendation, user idea, pending task, or suggestion
+title: "[EXECUTE] "
+labels:
+  - execution-board
+body:
+  - type: dropdown
+    id: item_type
+    attributes:
+      label: Item type
+      options:
+        - User idea
+        - Recommendation
+        - Pending work
+        - Suggestion
+        - Blocker
+    validations:
+      required: true
+  - type: input
+    id: item_id
+    attributes:
+      label: Existing board ID
+      description: Leave blank only for a new item. Example DBH-PEN-001.
+      placeholder: DBH-PEN-001
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Required outcome
+      description: State the deliverable and the acceptance condition.
+      placeholder: What must exist and how will completion be verified?
+    validations:
+      required: true
+  - type: dropdown
+    id: decision
+    attributes:
+      label: Decision
+      options:
+        - Add to inbox
+        - Approve and execute
+        - Put on hold
+        - Cancel
+    validations:
+      required: true
+  - type: checkboxes
+    id: discipline
+    attributes:
+      label: Execution discipline
+      options:
+        - label: Mark DONE only after implementation and relevant checks pass.
+          required: true
+        - label: Report genuine authorization or access blockers instead of claiming completion.
+          required: true
