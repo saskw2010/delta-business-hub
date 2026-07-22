@@ -17,6 +17,7 @@
       organization: { ar: 'استشارات وتدريب الضيافة والأغذية والمشروبات', en: 'Hospitality and Food & Beverage Consulting & Training' },
       evidence: { ar: 'أكثر من 20 عامًا - أكثر من 150 مشروعًا - 10 دول', en: '20+ years - 150+ projects - 10 countries' },
       profileUrl: { ar: 'leaders/mohamed-alawdan.html', en: 'leaders/mohamed-alawdan.html' },
+      facebookUrl: 'https://www.facebook.com/profile.php?id=61569028362064',
       bio: { ar: 'خبير تطوير أعمال وتشغيل أغذية ومشروبات يقود Awdan Consult منذ 2001. يجمع بين تقييم البيزنس، والاستشارات الاستراتيجية، والتدريب العملي، وتطوير المفاهيم، وأنظمة التشغيل والجودة وسلامة الغذاء، مع خبرة واسعة في المطاعم والفنادق والمطابخ المركزية والتموين الطبي والجوي والصناعي والامتياز التجاري.', en: 'Food, beverage, and business-development professional leading Awdan Consult since 2001. He combines business evaluation, strategic consulting, practical training, concept development, operating systems, quality, and food safety across restaurants, hotels, central kitchens, healthcare, aviation, industrial catering, and franchising.' },
       sectors: [{ ar: 'الضيافة', en: 'Hospitality' }, { ar: 'الأغذية والمشروبات', en: 'Food & Beverage' }, { ar: 'تقييم الأعمال', en: 'Business Evaluation' }, { ar: 'الاستشارات', en: 'Consulting' }, { ar: 'التدريب', en: 'Training' }, { ar: 'النمو والامتياز', en: 'Growth & Franchising' }]
     },
