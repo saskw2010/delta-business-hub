@@ -50,7 +50,7 @@ Use an item ID in chat to act immediately:
 | DBH-IDEA-006 | Create a Google Drive folder named `Delta Business Hub` containing the project resources. | Design agreed; Drive structure not yet created. | INBOX |
 | DBH-IDEA-007 | Use a Google Sheet named `Delta Business Hub - Ideas Database` as the main operational database. | Spreadsheet exists; full structure, formatting, and integration remain. | INBOX |
 | DBH-IDEA-008 | Create recommendations, ideas, pending-work, and suggestions lists that can be executed by ID. | Execution board, commands, issue intake, and README link implemented. | DONE |
-| DBH-IDEA-009 | Turn the first community meeting into a standards-based plan, opportunity portfolio, and concept graphs for relationships, business, capabilities, places, and markets. | Bilingual meeting collection and structured graph renderer are being implemented. | IN PROGRESS |
+| DBH-IDEA-009 | Turn the first community meeting into a standards-based plan, opportunity portfolio, and concept graphs for relationships, business, capabilities, places, and markets. | Bilingual meeting collection and structured graph renderer published and verified. | DONE |
 
 ## 3. Pending Work
 
@@ -65,7 +65,7 @@ These are the approved or logically next implementation items that remain unfini
 | DBH-PEN-005 | Add controlled public publishing from Google data to the website. | Approved records can be exported/published without exposing private fields. | PENDING |
 | DBH-PEN-006 | Complete end-to-end production testing. | Submit → validate → assign ID → store → create files → publish → display works and is documented. | PENDING |
 | DBH-PEN-007 | Finish the execution-board workflow. | Board is committed, linked from README, and reusable through item-ID commands. | DONE |
-| DBH-PEN-008 | Publish Meeting 01 intelligence and four concept graphs. | Plan, bilingual meeting index/pages, opportunity portfolio, structured graph data, discoverable home links, and successful repository checks. | IN PROGRESS |
+| DBH-PEN-008 | Publish Meeting 01 intelligence and four concept graphs. | Plan, bilingual meeting index/pages, opportunity portfolio, structured graph data, discoverable home links, and successful repository checks. | DONE |
 
 ## 4. Suggestions
 
@@ -88,6 +88,7 @@ Suggestions are not executed until the user approves their IDs.
 | DBH-DONE-002 | Bilingual Arabic/English core website. | Merged into `main` in commit `44516dd8315a50214207728ea64b7604c131e707`. |
 | DBH-DONE-003 | Animated globe entry and language choice. | Live root entry page links to `/en/` and `/ar/`. |
 | DBH-DONE-004 | Persistent execution board and ID-based workflow. | Merged into `main` in commit `1ceb7a7a60be9155967f47b122cf2151ed6495b8`. |
+| DBH-DONE-005 | First meeting intelligence, opportunity portfolio, and four concept graphs. | Merged into `main` in commit `c4f7561a7ac3e8a3654f0b746091ccdf444ce58b`; Quality and Pages workflows passed. |
 
 ## Execution discipline
 
