@@ -11,16 +11,22 @@
       sectors: [{ ar: 'التشييد', en: 'Construction' }, { ar: 'الفحص', en: 'Inspection' }, { ar: 'الكميات', en: 'Quantities' }]
     },
     {
-      id: 'leader-food-export', order: 2, status: 'pending', initials: 'F',
-      name: { ar: 'قائد المنتجات الغذائية والتصدير', en: 'Food Products & Export Leader' },
-      title: { ar: 'الملف قيد الاستلام', en: 'Profile pending' },
-      bio: { ar: 'مساحة مخصصة لخبرات تطوير المنتجات الغذائية والجودة والتصنيع وبناء قنوات التصدير.', en: 'Reserved for food product development, quality, manufacturing, and export-channel expertise.' },
-      sectors: [{ ar: 'المنتجات الغذائية', en: 'Food Products' }, { ar: 'التصدير', en: 'Export' }, { ar: 'الجودة', en: 'Quality' }]
+      id: 'mohamed-alawdan', order: 2, status: 'verified', initials: 'MA',
+      name: { ar: 'محمد العوضان', en: 'Mohamed Alawdan' },
+      title: { ar: 'مؤسس ومدير تنفيذي - Awdan Consult', en: 'Founder & CEO - Awdan Consult' },
+      organization: { ar: 'استشارات وتدريب الضيافة والأغذية والمشروبات', en: 'Hospitality and Food & Beverage Consulting & Training' },
+      evidence: { ar: 'أكثر من 20 عامًا - أكثر من 150 مشروعًا - 10 دول', en: '20+ years - 150+ projects - 10 countries' },
+      profileUrl: { ar: 'leaders/mohamed-alawdan.html', en: 'leaders/mohamed-alawdan.html' },
+      bio: { ar: 'خبير تطوير أعمال وتشغيل أغذية ومشروبات يقود Awdan Consult منذ 2001. يجمع بين تقييم البيزنس، والاستشارات الاستراتيجية، والتدريب العملي، وتطوير المفاهيم، وأنظمة التشغيل والجودة وسلامة الغذاء، مع خبرة واسعة في المطاعم والفنادق والمطابخ المركزية والتموين الطبي والجوي والصناعي والامتياز التجاري.', en: 'Food, beverage, and business-development professional leading Awdan Consult since 2001. He combines business evaluation, strategic consulting, practical training, concept development, operating systems, quality, and food safety across restaurants, hotels, central kitchens, healthcare, aviation, industrial catering, and franchising.' },
+      sectors: [{ ar: 'الضيافة', en: 'Hospitality' }, { ar: 'الأغذية والمشروبات', en: 'Food & Beverage' }, { ar: 'تقييم الأعمال', en: 'Business Evaluation' }, { ar: 'الاستشارات', en: 'Consulting' }, { ar: 'التدريب', en: 'Training' }, { ar: 'النمو والامتياز', en: 'Growth & Franchising' }]
     },
     {
       id: 'mostafa-el-nagar', order: 3, status: 'verified', initials: 'ME',
       name: { ar: 'المهندس مصطفى النجار', en: 'Eng. Mostafa El Nagar' },
       title: { ar: 'معماري حلول الذكاء الاصطناعي والبرمجيات المؤسسية', en: 'Enterprise AI & Software Solutions Architect' },
+      organization: { ar: 'WytSky / SKY365', en: 'WytSky / SKY365' },
+      evidence: { ar: 'أكثر من 20 عامًا في البرمجيات المؤسسية والمنصات', en: '20+ years in enterprise software and platforms' },
+      profileUrl: { ar: 'leaders/mostafa-el-nagar.html', en: 'leaders/mostafa-el-nagar.html' },
       bio: { ar: 'مهندس برمجيات ومعماري منصات بخبرة تتجاوز 20 عامًا في .NET وERP والحوسبة السحابية والذكاء الاصطناعي ووكلاء الأعمال. يركز على تحويل احتياجات الشركات والمجتمعات إلى منصات عملية ومسارات تنفيذ قابلة للقياس.', en: 'Software and platform architect with 20+ years of experience across .NET, ERP, cloud, AI, and business agents. He focuses on turning organizational and community needs into practical platforms and measurable execution workflows.' },
       sectors: [{ ar: 'البرمجيات', en: 'Software' }, { ar: 'ERP', en: 'ERP' }, { ar: 'الذكاء الاصطناعي', en: 'AI' }, { ar: 'تصميم العمليات', en: 'Process Design' }]
     },
