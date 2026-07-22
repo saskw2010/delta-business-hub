@@ -88,7 +88,8 @@
       const organization = person.organization ? `<div class="leader-organization">${escapeHtml(pick(person.organization))}</div>` : '';
       const evidence = person.evidence ? `<div class="leader-evidence">${escapeHtml(pick(person.evidence))}</div>` : '';
       const profileUrl = person.profileUrl ? pick(person.profileUrl) : '';
-      const action = !pending && profileUrl ? `<a class="leader-profile-link" href="${escapeHtml(profileUrl)}">${lang === 'ar' ? 'افتح صفحة القائد' : 'Open leader profile'}</a>` : '';
+      const profileAction = !pending && profileUrl ? `<a class="leader-profile-link" href="${escapeHtml(profileUrl)}">${lang === 'ar' ? 'افتح صفحة القائد' : 'Open leader profile'}</a>` : '';
+      const facebookAction = !pending && person.facebookUrl ? `<a class="leader-profile-link" href="${escapeHtml(person.facebookUrl)}" target="_blank" rel="noopener noreferrer">Facebook</a>` : '';
       return `<article class="leader-card ${pending ? 'pending' : ''}">
         <span class="leader-rank">#${escapeHtml(person.order)}</span>
         <div class="leader-avatar">${escapeHtml(person.initials)}</div>
@@ -98,7 +99,7 @@
         ${organization}${evidence}
         <p>${escapeHtml(pick(person.bio))}</p>
         <div class="leader-tags">${tags}</div>
-        ${action}
+        ${profileAction}${facebookAction}
       </article>`;
     }).join('');
   }
