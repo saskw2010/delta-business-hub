@@ -1,6 +1,6 @@
 # Delta Business Hub — Execution Board
 
-**Last updated:** 2026-07-19  
+**Last updated:** 2026-07-23  
 **Source of truth:** this file on the `main` branch  
 **Operating rule:** execute first when access is available; report only what was actually completed, tested, blocked, or needs account-owner authorization.
 
@@ -36,6 +36,7 @@ Use an item ID in chat to act immediately:
 | DBH-REC-003 | Require validation, quality checks, and an end-to-end test before every production merge. | Stops incomplete features from being described as finished. | RECOMMENDED |
 | DBH-REC-004 | Give every idea, recommendation, and task a permanent ID. | Lets the user approve execution with one short command. | RECOMMENDED |
 | DBH-REC-005 | Maintain Arabic and English together for every public page change. | Prevents the two language versions from drifting apart. | RECOMMENDED |
+| DBH-REC-006 | Publish sanitized meeting intelligence instead of raw transcripts in the public repository. | Preserves reusable knowledge while protecting privacy and participant comfort. | RECOMMENDED |
 
 ## 2. User Ideas Inbox
 
@@ -49,6 +50,7 @@ Use an item ID in chat to act immediately:
 | DBH-IDEA-006 | Create a Google Drive folder named `Delta Business Hub` containing the project resources. | Design agreed; Drive structure not yet created. | INBOX |
 | DBH-IDEA-007 | Use a Google Sheet named `Delta Business Hub - Ideas Database` as the main operational database. | Spreadsheet exists; full structure, formatting, and integration remain. | INBOX |
 | DBH-IDEA-008 | Create recommendations, ideas, pending-work, and suggestions lists that can be executed by ID. | Execution board, commands, issue intake, and README link implemented. | DONE |
+| DBH-IDEA-009 | Turn the first community meeting into a standards-based plan, opportunity portfolio, and concept graphs for relationships, business, capabilities, places, and markets. | Bilingual meeting collection and structured graph renderer are being implemented. | IN PROGRESS |
 
 ## 3. Pending Work
 
@@ -63,6 +65,7 @@ These are the approved or logically next implementation items that remain unfini
 | DBH-PEN-005 | Add controlled public publishing from Google data to the website. | Approved records can be exported/published without exposing private fields. | PENDING |
 | DBH-PEN-006 | Complete end-to-end production testing. | Submit → validate → assign ID → store → create files → publish → display works and is documented. | PENDING |
 | DBH-PEN-007 | Finish the execution-board workflow. | Board is committed, linked from README, and reusable through item-ID commands. | DONE |
+| DBH-PEN-008 | Publish Meeting 01 intelligence and four concept graphs. | Plan, bilingual meeting index/pages, opportunity portfolio, structured graph data, discoverable home links, and successful repository checks. | IN PROGRESS |
 
 ## 4. Suggestions
 
@@ -75,6 +78,7 @@ Suggestions are not executed until the user approves their IDs.
 | DBH-SUG-003 | Add partner and skill matching. | Connects each idea with members who can provide missing capabilities. | RECOMMENDED |
 | DBH-SUG-004 | Add a weekly community opportunity report. | Summarizes new ideas, decisions, business impact, and required actions. | RECOMMENDED |
 | DBH-SUG-005 | Add an audit log for approvals and publishing decisions. | Preserves who changed what, when, and why. | RECOMMENDED |
+| DBH-SUG-006 | Standardize consent and publication levels for every meeting. | Enables useful transcript intelligence without exposing sensitive discussion. | RECOMMENDED |
 
 ## 5. Completed Work
 
