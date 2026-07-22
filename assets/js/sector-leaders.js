@@ -7,6 +7,26 @@
   const escapeHtml = value => String(value ?? '').replace(/[&<>'"]/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
 
   const graph = data.graphs?.ecosystem;
+  if (graph && !graph.nodes.some(node => node.id === 'person-mohamed-alawdan')) {
+    graph.nodes.push(
+      { id: 'person-mohamed-alawdan', type: 'people', x: 845, y: 330, label: { ar: 'محمد العوضان', en: 'Mohamed Alawdan' }, desc: { ar: 'قائد ضيافة وأغذية ومشروبات، ومقيّم أعمال وصانع نمو واستثمار غذائي.', en: 'Hospitality and F&B leader, business evaluator, and builder of food-sector growth and investment opportunities.' } },
+      { id: 'person-mostafa-el-nagar', type: 'people', x: 685, y: 515, label: { ar: 'م. مصطفى النجار', en: 'Eng. Mostafa El Nagar' }, desc: { ar: 'معماري برمجيات وذكاء اصطناعي يربط الخبرات بالمنصات والعمليات والتنفيذ.', en: 'Software and AI architect connecting expertise with platforms, processes, and execution.' } }
+    );
+    graph.edges.push(
+      { from: 'people', to: 'person-mohamed-alawdan', relation: { ar: 'يضم', en: 'includes' } },
+      { from: 'person-mohamed-alawdan', to: 'food', relation: { ar: 'يقود', en: 'leads' } },
+      { from: 'person-mohamed-alawdan', to: 'evaluation', relation: { ar: 'يقيّم', en: 'evaluates' } },
+      { from: 'person-mohamed-alawdan', to: 'consulting', relation: { ar: 'يقدم', en: 'delivers' } },
+      { from: 'person-mohamed-alawdan', to: 'training', relation: { ar: 'يدرّب', en: 'trains' } },
+      { from: 'person-mohamed-alawdan', to: 'growth', relation: { ar: 'يولد', en: 'generates' } },
+      { from: 'person-mohamed-alawdan', to: 'export', relation: { ar: 'يفتح أسواقًا', en: 'opens markets' } },
+      { from: 'people', to: 'person-mostafa-el-nagar', relation: { ar: 'يضم', en: 'includes' } },
+      { from: 'person-mostafa-el-nagar', to: 'software', relation: { ar: 'يبني', en: 'builds' } },
+      { from: 'person-mostafa-el-nagar', to: 'process', relation: { ar: 'يصمم', en: 'designs' } },
+      { from: 'person-mostafa-el-nagar', to: 'hub', relation: { ar: 'يعمر المنصة', en: 'architects' } }
+    );
+  }
+
   const shell = document.querySelector('[data-sector-network]');
   const details = document.querySelector('[data-sector-details]');
 
@@ -61,18 +81,24 @@
   const count = document.querySelector('[data-leader-count]');
   if (grid && Array.isArray(data.people)) {
     const people = [...data.people].sort((a, b) => a.order - b.order);
-    if (count) count.textContent = String(people.length);
+    if (count) count.textContent = String(people.filter(person => person.status === 'verified').length);
     grid.innerHTML = people.map(person => {
       const pending = person.status !== 'verified';
       const tags = (person.sectors || []).map(tag => `<span>${escapeHtml(pick(tag))}</span>`).join('');
+      const organization = person.organization ? `<div class="leader-organization">${escapeHtml(pick(person.organization))}</div>` : '';
+      const evidence = person.evidence ? `<div class="leader-evidence">${escapeHtml(pick(person.evidence))}</div>` : '';
+      const profileUrl = person.profileUrl ? pick(person.profileUrl) : '';
+      const action = !pending && profileUrl ? `<a class="leader-profile-link" href="${escapeHtml(profileUrl)}">${lang === 'ar' ? 'افتح صفحة القائد' : 'Open leader profile'}</a>` : '';
       return `<article class="leader-card ${pending ? 'pending' : ''}">
         <span class="leader-rank">#${escapeHtml(person.order)}</span>
         <div class="leader-avatar">${escapeHtml(person.initials)}</div>
-        <span class="leader-status">${pending ? (lang === 'ar' ? 'بانتظار البروفايل' : 'Profile pending') : (lang === 'ar' ? 'ملف مؤسس' : 'Founding profile')}</span>
+        <span class="leader-status">${pending ? (lang === 'ar' ? 'بانتظار البروفايل' : 'Profile pending') : (lang === 'ar' ? 'ملف قائد موثق' : 'Verified leader profile')}</span>
         <h3>${escapeHtml(pick(person.name))}</h3>
         <div class="leader-title">${escapeHtml(pick(person.title))}</div>
+        ${organization}${evidence}
         <p>${escapeHtml(pick(person.bio))}</p>
         <div class="leader-tags">${tags}</div>
+        ${action}
       </article>`;
     }).join('');
   }
